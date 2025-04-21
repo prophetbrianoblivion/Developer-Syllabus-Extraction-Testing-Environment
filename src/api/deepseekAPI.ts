@@ -25,7 +25,7 @@ interface ExtractionResponse {
 }
 
 let config: DeepseekConfig = {
-  apiKey: '',
+  apiKey: import.meta.env.VITE_DEEPSEEK_API_KEY || '',
   model: 'deepseek-coder',
   baseUrl: 'https://api.deepseek.com/v1',
   maxTokens: 2048
